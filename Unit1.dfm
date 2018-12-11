@@ -42,6 +42,7 @@ object Form1: TForm1
     Caption = 'Panel1'
     ShowCaption = False
     TabOrder = 1
+    ExplicitTop = 159
     object Button1: TButton
       Left = 8
       Top = 6
@@ -60,6 +61,15 @@ object Form1: TForm1
       TabOrder = 1
       OnClick = Button2Click
     end
+    object btnToSimpleString: TButton
+      Left = 223
+      Top = 6
+      Width = 89
+      Height = 25
+      Caption = 'ToSimpleString'
+      TabOrder = 2
+      OnClick = btnToSimpleStringClick
+    end
   end
   object mOut: TMemo
     Left = 0
@@ -71,6 +81,7 @@ object Form1: TForm1
     OnClick = mInClick
   end
   object Timer1: TTimer
+    Enabled = False
     Interval = 5000
     OnTimer = Timer1Timer
     Left = 264
